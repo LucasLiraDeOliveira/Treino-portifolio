@@ -83,3 +83,14 @@ ROTINA PADRÃO DE ALTERAÇÃO DE ARQUIVOS:
 
 
 
+
+
+Conteúdo Bônus
+    Se você quiser aprender mais sobre Git e GitHub. Primeiro, procure pela documentação oficial de ambos. Procure no seu navegador favorito por “Git documentation” e por GitHub Documentation”.
+
+    Ainda, existem muitos tutoriais online disponíveis gratuitamente que abrangem desde conceitos básicos até tópicos avançados de Git e GitHub. Alguns sites populares com tutoriais sobre Git e GitHub incluem o GitHub Learning Lab e o Git Tower’s Git Tutorial. Há, também, vários livros disponíveis que abordam o Git e o GitHub em detalhes. Alguns exemplos populares incluem “Pro Git” de Scott Chacon e Ben Straub e “GitHub Essentials” de Achilleas Pipinellis.
+
+    Lembrando que a prática é fundamental para o aprendizado do Git e do GitHub. Portanto, além de estudar a teoria, é recomendado que você utilize essas ferramentas em projetos reais para ganhar experiência e familiaridade com seus recursos e funcionalidades.
+
+
+
