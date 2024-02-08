@@ -1,6 +1,7 @@
-Thanks for downloading this template!
+Projeto de portifólio para exercitar o uso do BootStrap 5 e do GIT
 
-Template Name: iPortfolio
-Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-Author: BootstrapMade.com
+GitHub do autor: https://github.com/LucasLiraDeOliveira/
+
+Autor: Lucas Lira de Oliveira
+
 License: https://bootstrapmade.com/license/
