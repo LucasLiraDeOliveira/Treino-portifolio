@@ -1,0 +1,85 @@
+Abaixo listo o passo a passo para instalação do Git e como usá-lo para versionamento de código.
+
+    Passo 1: Instalação do Git
+        1.1: Primeiramente, você precisa baixar o Git para o seu computador. Para fazer isso, acesse o site oficial do projeto. É recomendado baixar diretamente do site oficial para evitar problemas com versões não oficiais ou desatualizadas.
+
+        1.2: No site do Git, você será automaticamente direcionado para a versão de download correspondente ao seu sistema operacional. Por exemplo, se estiver usando o Windows, o site sugerirá o download do Git para Windows.
+
+        1.3: Clique em “Download” e escolha a versão do sistema operacional com base em 32-bits ou 64-bits.
+
+        1.4: Após o download, clique no arquivo .exe para iniciar a instalação.
+
+    Passo 2: Configuração do Git
+        2.1: Durante a instalação, você será guiado através de uma série de opções de configuração. Por padrão, você pode simplesmente aceitar as configurações recomendadas.
+
+        2.2: Certifique-se de escolher um editor de texto que você está confortável para usar durante o processo de commit. O Vim é a escolha padrão, mas você pode selecionar outro se preferir.
+
+        2.3: Durante a instalação, você terá a opção de alterar a terminologia usada pelo Git. Em vez de “master”, você pode optar por usar “main”.
+
+        2.4: Após completar a instalação, você pode verificar se tudo correu bem abrindo o terminal do Visual Studio Code (VS Code) e digitando “git version”. Se o Git estiver instalado corretamente, ele mostrará a versão que você acabou de instalar.
+
+    Passo 3: Configuração do usuário Git
+        3.1: Para trabalhar com projetos Git, é importante configurar o seu nome de usuário e e-mail. Isso ajuda a identificar quem fez modificações específicas em um projeto.
+
+        3.2: No terminal do VS Code, digite os seguintes comandos:
+
+        - Para configurar o nome de usuário, digite: git config --global user.name “seu nome”
+
+        - Para configurar o e-mail, digite: git config --global user.email “seu e-mail”
+
+        Nota: Substitua “seu nome” e “seu e-mail” pelos seus dados reais.
+
+    Passo 4: Abertura do Projeto no VS Code
+
+    Passo 5: Iniciar o Git no Projeto
+
+        4.3: Adicionar Arquivos ao Git
+
+        No terminal do VS Code, digite git add … Esse comando adiciona todos os arquivos e pastas do projeto ao Git para serem monitorados. O comando git add . não é o mais apropriado para todos os casos. Por exemplo, diretórios como o vendor, que normalmente contêm bibliotecas, não são versionados. Mas, para fins didáticos, usaremos esse comando para adicionar todos os arquivos neste momento.
+
+        4:4: Verificar o Status do Git: No terminal do VS Code, digite git status. Este comando exibe o status atual do projeto no Git. Seus arquivos agora estão listados como “new file”, pois foram adicionados ao Git.
+
+        4.5: Fazer o Primeiro Commit
+
+        No terminal do VS Code, digite git commit -m “commit inicial”. O comando git commit persiste todas as alterações rastreadas. O parâmetro -m é seguido pela mensagem do commit entre aspas, que descreve as mudanças feitas. Você agora criou a primeira versão do seu projeto.
+
+        4.6: Fazer Alterações no Projeto e Rastreá-las
+
+        Faça algumas alterações em seus arquivos. Por exemplo, você pode mudar o texto de algumas seções. Após fazer as alterações, digite git status novamente para ver o status atual. Seus arquivos modificados agora estão listados como “modificados”. Você pode usar git diff nome_do_arquivo para ver exatamente o que foi modificado em cada arquivo. Quando estiver satisfeito com as alterações, digite git add nome_do_arquivo para rastrear as alterações. Digite git commit -m “descrição das alterações” para persistir as alterações.
+
+        4.7: Verificar o Histórico do Git
+
+        No terminal do VS Code, digite git log. Este comando exibe o histórico de todos os commits feitos no projeto.
+
+        Lembre-se, os comandos mais importantes para iniciar o rastreamento do seu projeto são git init, git add, git commit e git status. Utilize git log para revisar o histórico do projeto.
+
+
+
+
+
+COMANDOS GIT:
+    git init -> Para adicionar um arquivo .git ao projeto para que possar começar a versionar;
+    git add ARQUIVO -> “adiciona conteúdo” (propor uma mudança qualquer, seja ela alterar, adicionar ou remover um conteúdo) de um arquivo local ao índice ou staging area, que terá a mudança confirmada, posteriormente, com o comando git commit;
+    git commit -m -> Captura um instantâneo das mudanças preparadas do projeto no momento. Os instantâneos com commit podem ser considerados versões "seguras" de um projeto, o Git nunca os altera, a menos que você peça a ele;
+    git status -> para ver que arquivos tem modificação;
+    git diff NOME DO RAMO -> Para ver a diferença entre antes e depois da modificação do arquivo;
+    git branch -> Para checar em que ramo estou;
+    git branch NOME DO RAMO -> para criar um ramo DO LOCAL QUE VOCÊ está!!!;
+    git checkout NOME DO RAMO -> Para ir para o ramo desejado;
+    git branch -d NOME DO RAMO -> Para excluir o determinado ramo;
+    git merge NOME DO RAMO -> Para levar as alterações do ramo que deseja PARA O RAMO QUE VOCÊ ESTÁ!!!;
+    git log -> Para ver que commits foram feitos;
+
+
+
+ROTINA PADRÃO DE ALTERAÇÃO DE ARQUIVOS:
+    - PEGAR CONTEUDO QUE TA NA MAIN/NUVEM PARA A MAQUINA QUE ESTOU USANDO       VER!!!!!
+    - Edita o arquivo;
+    - Checa que arquivos foram editados com git status;
+    - Checa que linhas foram removidas/adicionadas co o git diff;
+    - Dá um git add para “adiciona conteúdo” editado;
+    - Confirma mudanças com o git commit.
+    - ENVIAR CONTEUDO QUE TA NA NA MAQUINA PARA A MAIN/NUVEM         VER!!!!!
+
+
+
